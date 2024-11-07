@@ -1,0 +1,16 @@
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\bin\Debug\net8.0\MpTree.exe
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\bin\Debug\net8.0\MpTree.deps.json
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\bin\Debug\net8.0\MpTree.runtimeconfig.json
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\bin\Debug\net8.0\MpTree.dll
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\bin\Debug\net8.0\MpTree.pdb
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\obj\Debug\net8.0\MpTree.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\obj\Debug\net8.0\MpTree.AssemblyInfoInputs.cache
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\obj\Debug\net8.0\MpTree.AssemblyInfo.cs
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\obj\Debug\net8.0\MpTree.csproj.CoreCompileInputs.cache
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\obj\Debug\net8.0\MpTree.sourcelink.json
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\obj\Debug\net8.0\MpTree.dll
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\obj\Debug\net8.0\refint\MpTree.dll
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\obj\Debug\net8.0\MpTree.pdb
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\obj\Debug\net8.0\MpTree.genruntimeconfig.cache
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\obj\Debug\net8.0\ref\MpTree.dll
+C:\Users\Discream\Documents\GitHub\mpTree\MpTree\MpTree\obj\Debug\net8.0\MpTree.csproj.AssemblyReference.cache

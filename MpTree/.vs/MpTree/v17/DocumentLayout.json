@@ -1,13 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Discream\\source\\repos\\MpTree\\",
+  "WorkspaceRootPath": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\discream\\source\\repos\\mptree\\mptree\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\discream\\documents\\github\\mptree\\mptree\\mptree\\dbcontrol\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\dbcontrol\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\discream\\source\\repos\\mptree\\mptree\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\discream\\documents\\github\\mptree\\mptree\\mptree\\dbcontrol\\modeldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\dbcontrol\\modeldao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\discream\\documents\\github\\mptree\\mptree\\mptree\\dbcontrol\\sqlitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\dbcontrol\\sqlitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\discream\\documents\\github\\mptree\\mptree\\mptree\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,37 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModelDao.cs",
+              "DocumentMoniker": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\DBControl\\ModelDao.cs",
+              "RelativeDocumentMoniker": "MpTree\\DBControl\\ModelDao.cs",
+              "ToolTip": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\DBControl\\ModelDao.cs",
+              "RelativeToolTip": "MpTree\\DBControl\\ModelDao.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T13:28:46.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SqliteController.cs",
+              "DocumentMoniker": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\DBControl\\SqliteController.cs",
+              "RelativeDocumentMoniker": "MpTree\\DBControl\\SqliteController.cs",
+              "ToolTip": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\DBControl\\SqliteController.cs",
+              "RelativeToolTip": "MpTree\\DBControl\\SqliteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T13:27:02.803Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "C:\\Users\\Discream\\source\\repos\\MpTree\\MpTree\\Class1.cs",
-              "RelativeDocumentMoniker": "MpTree\\Class1.cs",
-              "ToolTip": "C:\\Users\\Discream\\source\\repos\\MpTree\\MpTree\\Class1.cs",
-              "RelativeToolTip": "MpTree\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\DBControl\\Model.cs",
+              "RelativeDocumentMoniker": "MpTree\\DBControl\\Model.cs",
+              "ToolTip": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\DBControl\\Model.cs",
+              "RelativeToolTip": "MpTree\\DBControl\\Model.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T13:14:56.792Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Discream\\source\\repos\\MpTree\\MpTree\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\Program.cs",
               "RelativeDocumentMoniker": "MpTree\\Program.cs",
-              "ToolTip": "C:\\Users\\Discream\\source\\repos\\MpTree\\MpTree\\Program.cs",
+              "ToolTip": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\Program.cs",
               "RelativeToolTip": "MpTree\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T13:13:37.164Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }
