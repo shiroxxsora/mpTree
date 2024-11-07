@@ -11,10 +11,29 @@ class App : Application
     static void Main(string[] args)
     {
         var app = new App();
-        var model = new Model("C:\\path\\to\\file", "150MB", "3:45", "Song Name", "Artist", "Album Name", "2024", "Pop");
-        Console.WriteLine(model.GetXmlString);
 
-        var mainWindow = new MainWindow("C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\test.xml");
+        TestClass testClass = new TestClass();
+        testClass.Start();
+        testClass.Start();
+
+
+        /*
+         Это относительный путь до test.xml, чтобы не указывать полное имя, скажи потом, у тебя работает или нет
+         */
+        string file = Path.Combine(
+           Directory.GetParent(
+               Directory.GetParent(
+                   Directory.GetParent(
+                        Directory.GetParent(Directory.GetCurrentDirectory()).FullName
+                   ).FullName
+               ).FullName
+           ).FullName,
+           "test.xml"
+       );
+        //string testxmlPath = "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\test.xml";
+        string testxmlPath = file;
+
+        var mainWindow = new MainWindow(testxmlPath);
         app.Run(mainWindow);
 
         if (args.Length == 0)

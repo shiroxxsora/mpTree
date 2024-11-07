@@ -15,14 +15,12 @@ namespace MpTree.DBControl
         public SqliteController(string connectionString)
         {
             this.connectionString = connectionString;
+            connection = new SQLiteConnection(connectionString);
         }
+                
 
         public void Connect()
         {
-            if (connection == null)
-            {
-                connection = new SQLiteConnection(connectionString);
-            }
             if (connection.State == ConnectionState.Closed)
             {
                 connection.Open();
@@ -36,40 +34,37 @@ namespace MpTree.DBControl
                 connection.Close();
             }
         }
-
-        public SQLiteTransaction BeginTransaction()
-        {
-            Connect();
-            return connection.BeginTransaction();
-        }
-
-        public void CommitTransaction(SQLiteTransaction transaction)
-        {
-            transaction.Commit();
-        }
-
-        public void RollbackTransaction(SQLiteTransaction transaction)
-        {
-            transaction.Rollback();
-        }
-
         public SQLiteDataReader ExecuteQuery(string query)
         {
-            SQLiteCommand command = new SQLiteCommand(query, connection);
-            return command.ExecuteReader();
+            using (var command = new SQLiteCommand(query, connection))
+            {
+                return command.ExecuteReader();
+            }
+        }
+        public SQLiteDataReader ExecuteQueryWithParams(string query, SQLiteParameter[] parameters)
+        {
+            using(var command = new SQLiteCommand(query, connection))
+            {
+                command.Parameters.AddRange(parameters);
+                return command.ExecuteReader();
+            }
         }
 
         public int ExecuteUpdate(string query)
         {
-            SQLiteCommand command = new SQLiteCommand(query, connection);
-            return command.ExecuteNonQuery();
+            using (var command = new SQLiteCommand(query, connection))
+            {
+                return command.ExecuteNonQuery();
+            }
         }
 
         public int ExecuteUpdateWithParams(string query, SQLiteParameter[] parameters)
         {
-            SQLiteCommand command = new SQLiteCommand(query, connection);
-            command.Parameters.AddRange(parameters);
-            return command.ExecuteNonQuery();
+            using (var command = new SQLiteCommand(query, connection))
+            {
+                command.Parameters.AddRange(parameters);
+                return command.ExecuteNonQuery();
+            }
         }
     }
 }

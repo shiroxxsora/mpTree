@@ -5,28 +5,45 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.Text.RegularExpressions;
+using System.Windows.Shapes;
 namespace MpTree.DBControl
 {
-    internal class Model
+    internal class SongModel
     {
         private string _path;
-        private string _size;
-        private string _duration;
+        private long _size;
+        private long _duration;
         private string _name;
         private string _author;
-        private string _albom;
+        private string _album;
         private string _year;
         private string _genres;
-        public Model(string path, string size, string duration, string name, string author, string albom, string year, string genres)
+        public SongModel(string path, long size, long duration, string name, string author, string album, string year, string genres)
         {
             _path = path;
-            _size = size;
-            _duration = duration;
+            _size = size; // Размер файла в байтах
+            _duration = duration; // Длительность песни в секундах
             _name = name;
             _author = author;
-            _albom = albom;
+            _album = album;
             _year = year;
             _genres = genres;
+            CheckFields();
+
+        }
+        private void CheckFields()
+        {
+            string windowsPathPattern = @"^[a-zA-Z]:\\(?:[^\\/:*?""<>|\r\n]+\\)*[^\\/:*?""<>|\r\n]*$";
+            if(!Regex.IsMatch(_path, windowsPathPattern))
+            {
+                throw new Exception($"Path invalid :{Path}");
+            }
+            if (Duration <= 0) 
+            {
+                throw new Exception($"Duration less 0 iMPossible: {Duration}");
+            }
+
         }
         public string GetXmlString
         {
@@ -45,14 +62,14 @@ namespace MpTree.DBControl
                 XmlElement root = xmlDoc.CreateElement("Model");
 
                 // Create and append each element with respective property values
-                AppendElement(xmlDoc, root, "Path", _path);
-                AppendElement(xmlDoc, root, "Size", _size);
-                AppendElement(xmlDoc, root, "Duration", _duration);
-                AppendElement(xmlDoc, root, "Name", _name);
-                AppendElement(xmlDoc, root, "Author", _author);
-                AppendElement(xmlDoc, root, "Albom", _albom);
-                AppendElement(xmlDoc, root, "Year", _year);
-                AppendElement(xmlDoc, root, "Genres", _genres);
+                AppendElement(xmlDoc, root, "Path", Path);
+                AppendElement(xmlDoc, root, "Size", Size.ToString());
+                AppendElement(xmlDoc, root, "Duration", Duration.ToString());
+                AppendElement(xmlDoc, root, "Name", Name);
+                AppendElement(xmlDoc, root, "Author", Author);
+                AppendElement(xmlDoc, root, "Album", Album);
+                AppendElement(xmlDoc, root, "Year", Year);
+                AppendElement(xmlDoc, root, "Genres", Genres);
 
                 // Append the root element to the XmlDocument
                 xmlDoc.AppendChild(root);
@@ -65,11 +82,11 @@ namespace MpTree.DBControl
         // Helper method to create an element and append it
 
         public string Path { get { return _path; } }
-        public string Size { get { return _size; } }
-        public string Duration { get { return _duration; } }
+        public long Size { get { return _size; } }
+        public long Duration { get { return _duration; } }
         public string Name { get { return _name; } }
         public string Author { get { return _author; } }
-        public string Albom { get { return _albom; } }
+        public string Album { get { return _album; } }
         public string Year { get { return _year; } }
         public string Genres { get { return _genres; } }
     }
