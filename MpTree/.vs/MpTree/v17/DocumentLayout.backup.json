@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\mptree.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
@@ -83,25 +83,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\Windows\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MpTree\\Windows\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\Windows\\MainWindow.xaml.cs",
               "RelativeToolTip": "MpTree\\Windows\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAowBIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAswFgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T03:31:03.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\Windows\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MpTree\\Windows\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\Windows\\MainWindow.xaml*",
-              "RelativeToolTip": "MpTree\\Windows\\MainWindow.xaml*",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\Windows\\MainWindow.xaml",
+              "RelativeToolTip": "MpTree\\Windows\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-08T03:15:37.356Z",
               "EditorCaption": ""
@@ -120,12 +120,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "App.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\App.cs",
               "RelativeDocumentMoniker": "MpTree\\App.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\App.cs*",
-              "RelativeToolTip": "MpTree\\App.cs*",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\App.cs",
+              "RelativeToolTip": "MpTree\\App.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T16:51:14.923Z",

@@ -21,14 +21,14 @@ namespace MpTree.Windows
             LoadXmlData();
         }
 
-        private void SelectFolderButton_Click(object sender, RoutedEventArgs e)
+        private async void SelectFolderButton_Click(object sender, RoutedEventArgs e)
         {
             var folderDialog = new System.Windows.Forms.FolderBrowserDialog();
 
             if (folderDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 string selectedFolder = folderDialog.SelectedPath;
-                SaveMp3DataToXml(selectedFolder);
+                await SaveMp3DataToXmlAsync(selectedFolder);
                 LoadXmlData();
             }
         }
@@ -38,19 +38,24 @@ namespace MpTree.Windows
             LoadXmlData();
         }
 
-        private void SaveMp3DataToXml(string folderPath)
+        private async Task SaveMp3DataToXmlAsync(string folderPath)
         {
-            // Получаем все MP3 файлы в папке и поддиректориях
-            var mp3Files = Directory.GetFiles(folderPath, "*.mp3", SearchOption.AllDirectories);
+            try
+            {
+                // Получаем все MP3 файлы в папке и поддиректориях
+                var mp3Files = Directory.EnumerateFiles(folderPath, "*.mp3", SearchOption.AllDirectories)
+                                        .Where(file => HasReadAccess(file)); // Проверка на доступ
 
-            // Создаем XML-документ
-            var xDocument = new XDocument(
-                new XElement("Mp3Files",
-                    mp3Files.Select(filePath =>
+                var mp3Data = new List<XElement>();
+
+                foreach (var filePath in mp3Files)
+                {
+                    try
                     {
-                        var file = TagLib.File.Create(filePath);
+                        var file = await Task.Run(() => TagLib.File.Create(filePath));
                         var fileInfo = new FileInfo(filePath);
-                        return new XElement("File",
+
+                        var fileElement = new XElement("File",
                             new XElement("Path", filePath),
                             new XElement("Size", fileInfo.Length),
                             new XElement("Duration", (long)file.Properties.Duration.TotalSeconds),
@@ -60,14 +65,49 @@ namespace MpTree.Windows
                             new XElement("Year", file.Tag.Year.ToString()),
                             new XElement("Genres", string.Join(", ", file.Tag.Genres))
                         );
-                    })
-                )
-            );
 
-            // Сохраняем XML-документ в файл
-            xDocument.Save(xmlFilePath);
-            MessageBox.Show("Данные MP3 файлов сохранены в XML.");
+                        mp3Data.Add(fileElement);
+                    }
+                    catch (Exception ex)
+                    {
+                        // Если возникла ошибка при обработке конкретного файла, выводим сообщение, но продолжаем обработку
+                        MessageBox.Show($"Ошибка при обработке файла {filePath}: {ex.Message}");
+                    }
+                }
+
+                // Создаем и сохраняем XML-документ
+                var xDocument = new XDocument(new XElement("Mp3Files", mp3Data));
+                xDocument.Save(xmlFilePath);
+
+                MessageBox.Show("Данные MP3 файлов сохранены в XML.");
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                // Сообщение при отсутствии доступа к папке
+                MessageBox.Show($"Нет доступа к папке: {folderPath}. Ошибка: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при обработке файлов: {ex.Message}");
+            }
         }
+        private bool HasReadAccess(string filePath)
+        {
+            try
+            {
+                using (File.Open(filePath, FileMode.Open, FileAccess.Read)) { }
+                return true;
+            }
+            catch (UnauthorizedAccessException)
+            {
+                return false;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
 
         private void LoadXmlData()
         {
