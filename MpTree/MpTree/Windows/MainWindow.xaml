@@ -12,7 +12,7 @@
             <ToolBarTray DockPanel.Dock="Top">
                 <ToolBar>
                     <!-- Кнопка для добавления файлов -->
-                    <Button x:Name="SelectFilesButton" Content="Добавить файлы" Click="SelectFilesButton_Click"/>
+                    <Button x:Name="SelectFolderButton" Content="Выбрать папку" Click="SelectFolderButton_Click"/>
 
                     <!-- Кнопка для отображения дубликатов -->
                     <Button x:Name="ShowDuplicatesButton" Content="Вывести дубликаты" Click="ShowDuplicatesButton_Click"/>

@@ -3,36 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\dbcontrol\\sqlitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\dbcontrol\\sqlitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\windows\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\windows\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\mptree.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\mptree.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\dbcontrol\\songmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\dbcontrol\\songmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\mptree.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\mptree.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\dbcontrol\\songdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\dbcontrol\\songdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\testclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\testclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\dbcontrol\\sqlitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\dbcontrol\\sqlitecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\mptree.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\mptree.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\dbcontrol\\songmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\dbcontrol\\songmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|c:\\users\\user\\source\\repos\\mptree\\mptree\\mptree\\testclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F95F59D-350B-4D34-93EF-594689EBDAC6}|MpTree\\MpTree.csproj|solutionrelative:mptree\\testclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -52,10 +56,21 @@
               "RelativeDocumentMoniker": "MpTree\\DBControl\\SongDao.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\DBControl\\SongDao.cs",
               "RelativeToolTip": "MpTree\\DBControl\\SongDao.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowBkAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAuwBkAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T13:28:46.808Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MpTree",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
+              "RelativeDocumentMoniker": "MpTree\\MpTree.csproj",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
+              "RelativeToolTip": "MpTree\\MpTree.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-08T07:50:59.687Z",
               "EditorCaption": ""
             },
             {
@@ -68,32 +83,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\Windows\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MpTree\\Windows\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\Windows\\MainWindow.xaml.cs",
               "RelativeToolTip": "MpTree\\Windows\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAiwHUAAACaAAAAAAAAAA==",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAowBIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T03:31:03.292Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\Windows\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MpTree\\Windows\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\Windows\\MainWindow.xaml",
-              "RelativeToolTip": "MpTree\\Windows\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\Windows\\MainWindow.xaml*",
+              "RelativeToolTip": "MpTree\\Windows\\MainWindow.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-11-08T03:15:37.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "SqliteController.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\DBControl\\SqliteController.cs",
               "RelativeDocumentMoniker": "MpTree\\DBControl\\SqliteController.cs",
@@ -101,8 +116,7 @@
               "RelativeToolTip": "MpTree\\DBControl\\SqliteController.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAEwEEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T13:27:02.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T13:27:02.803Z"
             },
             {
               "$type": "Document",
@@ -110,16 +124,16 @@
               "Title": "App.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\App.cs",
               "RelativeDocumentMoniker": "MpTree\\App.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\App.cs",
-              "RelativeToolTip": "MpTree\\App.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\App.cs*",
+              "RelativeToolTip": "MpTree\\App.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T16:51:14.923Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "TestClass.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\TestClass.cs",
               "RelativeDocumentMoniker": "MpTree\\TestClass.cs",
@@ -127,25 +141,24 @@
               "RelativeToolTip": "MpTree\\TestClass.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T18:09:31.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T18:09:31.73Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "MpTree.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
               "RelativeDocumentMoniker": "MpTree\\MpTree.csproj",
               "ToolTip": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
               "RelativeToolTip": "MpTree\\MpTree.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-11-07T14:38:06.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "SongModel.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\DBControl\\SongModel.cs",
               "RelativeDocumentMoniker": "MpTree\\DBControl\\SongModel.cs",
@@ -153,8 +166,7 @@
               "RelativeToolTip": "MpTree\\DBControl\\SongModel.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAD4v0cAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T13:14:56.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T13:14:56.792Z"
             }
           ]
         }
