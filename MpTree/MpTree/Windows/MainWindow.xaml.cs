@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using MpTree.DBControl;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -21,42 +23,149 @@ namespace MpTree.Windows
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow(string path)
+        static string _connectionString = "Data Source=mydatabase.db;Version=3;";
+        static SqliteController _controller = new SqliteController(_connectionString);
+        static SongDao _songDao = new SongDao(_controller);
+        public MainWindow()
         {
             InitializeComponent();
-            LoadXmlToDataGrid(path); // Укажите путь к XML-файлу
+            _songDao.InitializeTable();
+            LoadXmlData();
         }
-        private void LoadXmlToDataGrid(string filePath)
+        private void SelectFilesButton_Click(object sender, RoutedEventArgs e)
         {
-            try
+            OpenFileDialog openFileDialog = new OpenFileDialog
             {
-                if (File.Exists(filePath))
-                {
-                    // Загрузка XML-файла
-                    XDocument xdoc = XDocument.Load(filePath);
+                Multiselect = true,
+                Filter = "MP3 files (*.mp3)|*.mp3|All files (*.*)|*.*"
+            };
 
-                    // Преобразуем XML-данные в список анонимных объектов для привязки к DataGrid
-                    var data = xdoc.Root.Elements("Employee") // Используйте ваш корневой элемент
-                        .Select(e => new
-                        {
-                            ID = (int)e.Element("ID"),
-                            Name = (string)e.Element("Name"),
-                            Position = (string)e.Element("Position"),
-                            Salary = (decimal)e.Element("Salary")
-                        }).ToList();
+            if (openFileDialog.ShowDialog() == true)
+            {
+                string[] selectedFiles = openFileDialog.FileNames;
+                foreach (string filePath in selectedFiles) {
+                    var file = TagLib.File.Create(filePath);
+                    FileInfo fileInfo = new FileInfo(filePath);
 
-                    // Привязка данных к DataGrid
-                    XmlDataGrid.ItemsSource = data;
+                    _songDao.CreateSong(new SongModel(
+                        filePath,
+                        fileInfo.Length,
+                        (long)file.Properties.Duration.TotalSeconds,
+                        file.Tag.Title,
+                        file.Tag.FirstPerformer,
+                        file.Tag.Album,
+                        file.Tag.Year.ToString(),
+                        string.Join(", ", file.Tag.Genres)
+                        ));
                 }
-                else
+
+                LoadXmlData();
+            }
+        }
+
+        private void ShowDuplicatesButton_Click( object sender, RoutedEventArgs e)
+        {
+            LoadXmlDublicateData();
+        }
+
+        private void ShowAllButton_Click(object sender, RoutedEventArgs e)
+        {
+            LoadXmlData();
+        }
+        private void ClearDatabaseButton_Click(object sender, RoutedEventArgs e)
+        {
+            _songDao.DropTable();
+            _songDao.InitializeTable();
+            LoadXmlData();
+        }
+
+        private void LoadXmlDublicateData()
+        {
+            List<SongModel> SongList = _songDao.GetAllSongs();
+
+            var allData = new List<dynamic>(); // Список для хранения данных
+
+            foreach (var song in SongList)
+            {
+                string xmlString = song.GetXmlString;
+
+                try
                 {
-                    MessageBox.Show("Файл не найден.");
+                    XDocument xDoc = XDocument.Parse(xmlString);
+
+                    // Пример извлечения данных. Здесь мы извлекаем все элементы <Model> в каждом XML
+                    var items = xDoc.Descendants("Model")
+                                    .Select(item => new
+                                    {
+                                        Path = item.Element("Path")?.Value,
+                                        Size = item.Element("Size")?.Value,
+                                        Duration = item.Element("Duration")?.Value,
+                                        Name = item.Element("Name")?.Value,
+                                        Author = item.Element("Author")?.Value,
+                                        Albom = item.Element("Albom")?.Value,
+                                        Year = item.Element("Year")?.Value,
+                                        Genres = item.Element("Genres")?.Value
+                                    })
+                                    .ToList();
+
+                    allData.AddRange(items);
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show($"Ошибка при обработке XML: {e.Message}");
                 }
             }
-            catch (Exception ex)
+
+            // Группировка по полю Name и выбор только дубликатов
+            var duplicates = allData
+                .GroupBy(item => new { item.Size, item.Duration, item.Name, item.Albom, item.Year, item.Genres  }) // Группировка по всем полям кроме path
+                .Where(group => group.Count() > 1) // Выбор только тех групп, где больше одного элемента
+                .SelectMany(group => group) // Преобразуем группы обратно в список элементов
+                .ToList();
+
+            // Отображаем только дубликаты в DataGrid
+            XmlDataGrid.ItemsSource = duplicates;
+        }
+
+        private void LoadXmlData()
+        {
+            List<SongModel> SongList = _songDao.GetAllSongs();
+
+            var allData = new List<dynamic>(); // Список для хранения данных
+
+            foreach (var song in SongList)
             {
-                MessageBox.Show($"Ошибка при чтении файла: {ex.Message}");
+                string xmlString = song.GetXmlString;
+
+                try
+                {
+                    XDocument xDoc = XDocument.Parse(xmlString);
+
+                    // Пример извлечения данных. Здесь мы извлекаем все элементы <Model> в каждом XML
+                    var items = xDoc.Descendants("Model")
+                                    .Select(item => new
+                                    {
+                                        Path = item.Element("Path")?.Value,
+                                        Size = item.Element("Size")?.Value,
+                                        Duration = item.Element("Duration")?.Value,
+                                        Name = item.Element("Name")?.Value,
+                                        Author = item.Element("Author")?.Value,
+                                        Albom = item.Element("Albom")?.Value,
+                                        Year = item.Element("Year")?.Value,
+                                        Genres = item.Element("Genres")?.Value
+                                    })
+                                    .ToList();
+
+                    allData.AddRange(items);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка при обработке XML: {ex.Message}");
+                }
             }
+
+            // Привязка данных к DataGrid
+            XmlDataGrid.ItemsSource = allData;
         }
     }
 }

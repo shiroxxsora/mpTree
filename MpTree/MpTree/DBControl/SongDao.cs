@@ -22,7 +22,7 @@ namespace MpTree.DBControl
                 Path TEXT NOT NULL,
                 Size INTEGER NOT NULL,
                 Duration INTEGER NOT NULL,
-                Name TEXT NOT NULL,
+                Name TEXT,
                 Author TEXT,
                 Album TEXT,
                 Year TEXT,

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\MpTree.csproj": {}
+    "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\MpTree.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\MpTree.csproj": {
+    "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\MpTree.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
+        "projectUniqueName": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
         "projectName": "MpTree",
-        "projectPath": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
-        "packagesPath": "C:\\Users\\Discream\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\obj\\",
+        "projectPath": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Discream\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,6 +61,10 @@
             "System.Data.SQLite": {
               "target": "Package",
               "version": "[1.0.119, )"
+            },
+            "TagLibSharp": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             }
           },
           "imports": [
@@ -77,7 +81,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
-              "version": "[10.0.26100.34, 10.0.26100.34]"
+              "version": "[10.0.26100.44, 10.0.26100.44]"
             }
           ],
           "frameworkReferences": {
@@ -91,7 +95,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

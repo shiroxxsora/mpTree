@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <DataGrid x:Name="XmlDataGrid" AutoGenerateColumns="True" />
+        <DockPanel>
+            <!-- Панель инструментов (Toolbox) -->
+            <ToolBarTray DockPanel.Dock="Top">
+                <ToolBar>
+                    <!-- Кнопка для добавления файлов -->
+                    <Button x:Name="SelectFilesButton" Content="Добавить файлы" Click="SelectFilesButton_Click"/>
+
+                    <!-- Кнопка для отображения дубликатов -->
+                    <Button x:Name="ShowDuplicatesButton" Content="Вывести дубликаты" Click="ShowDuplicatesButton_Click"/>
+
+                    <!-- Кнопка для отображения всех файлов -->
+                    <Button x:Name="ShowAllButton" Content="Вывести все файлы" Click="ShowAllButton_Click"/>
+
+                    <!-- Кнопка для очистки базы данных -->
+                    <Button x:Name="ClearDatabaseButton" Content="Очистить базу данных" Click="ClearDatabaseButton_Click"/>
+                </ToolBar>
+            </ToolBarTray>
+
+            <!-- DataGrid для отображения содержимого -->
+            <DataGrid x:Name="XmlDataGrid"
+                  AutoGenerateColumns="True"
+                  HorizontalAlignment="Stretch"
+                  VerticalAlignment="Stretch"
+                  ColumnWidth="*"
+                  HorizontalScrollBarVisibility="Disabled"
+                  VerticalScrollBarVisibility="Auto"/>
+        </DockPanel>
     </Grid>
 </Window>

@@ -492,6 +492,19 @@
             "rid": "win"
           }
         }
+      },
+      "TagLibSharp/2.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/TagLibSharp.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/TagLibSharp.dll": {
+            "related": ".pdb"
+          }
+        }
       }
     }
   },
@@ -1428,6 +1441,23 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "TagLibSharp/2.3.0": {
+      "sha512": "Qo4z6ZjnIfbR3Us1Za5M2vQ97OWZPmODvVmepxZ8XW0UIVLGdO2T63/N3b23kCcyiwuIe0TQvMEQG8wUCCD1mA==",
+      "type": "package",
+      "path": "taglibsharp/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net462/TagLibSharp.dll",
+        "lib/net462/TagLibSharp.pdb",
+        "lib/net462/TaglibSharp.xml",
+        "lib/netstandard2.0/TagLibSharp.dll",
+        "lib/netstandard2.0/TagLibSharp.pdb",
+        "lib/netstandard2.0/TaglibSharp.xml",
+        "taglibsharp.2.3.0.nupkg.sha512",
+        "taglibsharp.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
@@ -1435,23 +1465,24 @@
       "Moq >= 4.20.72",
       "NUnit >= 4.2.2",
       "SQLite >= 3.13.0",
-      "System.Data.SQLite >= 1.0.119"
+      "System.Data.SQLite >= 1.0.119",
+      "TagLibSharp >= 2.3.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Discream\\.nuget\\packages\\": {}
+    "C:\\Users\\user\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
+      "projectUniqueName": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
       "projectName": "MpTree",
-      "projectPath": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
-      "packagesPath": "C:\\Users\\Discream\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\obj\\",
+      "projectPath": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\source\\repos\\mpTree\\MpTree\\MpTree\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Discream\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1498,6 +1529,10 @@
           "System.Data.SQLite": {
             "target": "Package",
             "version": "[1.0.119, )"
+          },
+          "TagLibSharp": {
+            "target": "Package",
+            "version": "[2.3.0, )"
           }
         },
         "imports": [
@@ -1514,7 +1549,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
-            "version": "[10.0.26100.34, 10.0.26100.34]"
+            "version": "[10.0.26100.44, 10.0.26100.44]"
           }
         ],
         "frameworkReferences": {
@@ -1528,7 +1563,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
