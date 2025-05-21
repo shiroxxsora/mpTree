@@ -1,33 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\MpTree.csproj": {}
+    "D:\\Documents\\Sharps\\mpTree\\MpTree\\MpTree\\MpTree.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\MpTree.csproj": {
+    "D:\\Documents\\Sharps\\mpTree\\MpTree\\MpTree\\MpTree.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
+        "projectUniqueName": "D:\\Documents\\Sharps\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
         "projectName": "MpTree",
-        "projectPath": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
+        "projectPath": "D:\\Documents\\Sharps\\mpTree\\MpTree\\MpTree\\MpTree.csproj",
         "packagesPath": "C:\\Users\\Discream\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Discream\\Documents\\GitHub\\mpTree\\MpTree\\MpTree\\obj\\",
+        "outputPath": "D:\\Documents\\Sharps\\mpTree\\MpTree\\MpTree\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Discream\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Discream\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net9.0": {
+            "targetAlias": "net9.0",
             "projectReferences": {}
           }
         },
@@ -40,11 +37,30 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "System.Data.SQLite.Core": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            },
+            "TagLibSharp": {
+              "target": "Package",
+              "version": "[2.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -57,11 +73,14 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
